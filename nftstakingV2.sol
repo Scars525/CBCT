@@ -22,7 +22,7 @@ contract NFTStaking is Ownable, IERC721Receiver {
 
   // reference to the Block NFT contract
   Collection nft;
-  CBCT token;
+  CBCTRewards token;
 
   // maps tokenId to stake
   mapping(uint256 => Stake) public vault; 
