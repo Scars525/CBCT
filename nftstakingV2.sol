@@ -27,7 +27,7 @@ contract NFTStaking is Ownable, IERC721Receiver {
   // maps tokenId to stake
   mapping(uint256 => Stake) public vault; 
 
-   constructor(Collection _nft, CBCT _token) { 
+   constructor(Collection _nft, CBCTRewards _token) { 
     nft = _nft;
     token = _token;
   }
