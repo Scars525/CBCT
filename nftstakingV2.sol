@@ -2,8 +2,8 @@
 
 pragma solidity 0.8.4;
 
-import "https://github.com/Scars525/contracts/blob/main/CBCTRewards.sol";
-import "https://github.com/Scars525/contracts/blob/main/Collection.sol";
+import "https://github.com/Scars525/CBCT/blob/main/CBCTRewards.sol";
+import "https://github.com/Scars525/CBCT/blob/main/Collection.sol";
 
 contract NFTStaking is Ownable, IERC721Receiver {
 
@@ -22,12 +22,12 @@ contract NFTStaking is Ownable, IERC721Receiver {
 
   // reference to the Block NFT contract
   Collection nft;
-  N2DRewards token;
+  CBCT token;
 
   // maps tokenId to stake
   mapping(uint256 => Stake) public vault; 
 
-   constructor(Collection _nft, N2DRewards _token) { 
+   constructor(Collection _nft, CBCT _token) { 
     nft = _nft;
     token = _token;
   }

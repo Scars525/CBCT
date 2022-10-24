@@ -16,7 +16,7 @@ contract Collection is ERC721Enumerable, Ownable {
     uint256 public maxMintAmount = 1;
     bool public paused = false;
 
-    constructor() ERC721("CRO Burner Club Test NFT", "CBCT") {}
+    constructor() ERC721("CRO Burner Club Test NFT", "CBCN") {}
 
 
     function _baseURI() internal view virtual override returns (string memory) {
